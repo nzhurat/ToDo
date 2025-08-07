@@ -2,6 +2,7 @@ import { useState } from "react";
 import { dummyData } from "./data/todos"
 import AddTodoForm from "./components/AddTodoForm";
 import TodoList from "./components/TodoList";
+import TodoSummary from "./components/TodoSummary";
 
 function App() {
   const [todos, setTodos] = useState(dummyData)
@@ -35,8 +36,12 @@ function App() {
         <AddTodoForm onSubmit={addTodo} />
         <TodoList todos={todos} onCompletedChange={setTodoCompleted} onDelete={deleteTodo}/>
       </div>
+      <TodoSummary 
+      todos={todos} 
+      deleteAllCompleted={() => {}} 
+      />
     </main>
-  )
+  );
 }
 
 export default App
