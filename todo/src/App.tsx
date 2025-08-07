@@ -1,5 +1,4 @@
 import { useState } from "react";
-import TodoItem from "./components/TodoItem"
 import { dummyData } from "./data/todos"
 import AddTodoForm from "./components/AddTodoForm";
 import TodoList from "./components/TodoList";
