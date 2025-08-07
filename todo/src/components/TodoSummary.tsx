@@ -17,7 +17,10 @@ deleteAllCompleted
                 {completedTodos.length}/{todos.length} todos completed
             </p>
             {completedTodos.length > 0 && (
-               <button>
+               <button
+               onClick={deleteAllCompleted}
+               className="text-red-500 hover:underine text-sm font-medium"
+               >
                 Delete all completed
                </button> 
             )}
